@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/LOGO.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/libs/animate.css">
+    <script src="js/js.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div id="Cooreo" class="Correo"></div>
+    <div id="RedesSociales" class="sticky-container wow fadeInDown" data-wow-duration="3s" data-wow-delay="3s">
+        <ul class="sticky">
+            <li>
+                <img src="assets/bxl-facebook.svg" width="32" height="32">
+                <p>
+                    <a href="" target="_blank"></p>
+            </li>
+            <li>
+                <img src="assets/bxl-instagram.svg" width="32" height="32">
+                <p>
+                    <a href="" target="_blank"></a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/bxl-whatsapp.svg" width="32" height="32">
+                <p>
+                    <a href="https://wa.me/7227999859" target="_blank"></a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/bxl-telegram.svg" width="32" height="32">
+                <p>
+                    <a href="" target="_blank"></a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/bx-phone-call.svg" width="32" height="32">
+                <p>
+                    <a href="" target="_blank"></a>
+                </p>
+            </li>
+            <li>
+                <img src="assets/bxl-linkedin.svg" width="32" height="32">
+                <p>
+                    <a href="" target="_blank"></a>
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="topnav wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" id="myTopnav">
+        <a id="logoIcon" href="#home" style="color:black">.</a>
+        <a href="assets/curriculum.pdf" target="_blank" download="CV_Martin" onclick="Descargar(this)"> <img src="assets/bx-cloud-download.svg" height="30px">CV</a>
+        <a href="#contacto" class="" onclick="myFunction()"> <img src="assets/bx-message-add.svg" height="30px"> Contacto</a>
+        <a href="#about" onclick="myFunction()"> <img src="assets/bx-folder-open.svg" height="30px"> Proyectos</a>
+        <a href="#about" onclick="myFunction()"> <img src="assets/bx-code-alt.svg" height="30px">Habilidades técnicas</a>
+        <a href="#Info" class="active" onclick="myFunction()"> <img src="assets/bx-user-pin.svg" height="30px"> Sobre mi</a>
+
+
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+    <header class="hero wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s" id="Info">
+
+        <div class="hero__container container">
+
+            <div class="hero__texts">
+                <h4>¡Hola!, mi nombre es</h4>
+                <h1 class="hero__title title--border animate__animated animate__backInDown">Martín Martínez</h1>
+                <p class="hero__copy animate__animated animate__backInUp">Soy ingeniero en informática y me especializo en la creación, mantenimiento (y ocasionalmente en el diseño) de sitios y aplicaciones web.
+                    <span>&#160;</span></p>
+                <a href="#contacto" class="hero__cta animate__animated animate__backInUp" onclick="desplazar(this)">Contáctame</a>
+            </div>
+            <img src="assets/bx-code-alt.svg" alt="" id="cambioImg" class="hero__img animate__animated animate__bounceInRight">
+        </div>
+    </header>
+
+    <main class="main">
+
+
+        <!--  Informacion -->
+        <section id="Instructor" class="instructor wow fadeInDown" data-wow-duration="3s" data-wow-delay="1s">
+            <div class="instructor__container">
+
+                <img class="Img_ins" src="assets/perfil2.jpg" alt="Avatar" loading="lazy" height="350px">
+
+                <div>
+                    <h5 class="Titulo__desarrollador title--border">Desarrollador web</h1>
+                        <p class="Instructor__copy">Continuamente aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras demandas y tendencias tecnológicas en el campo deldesarrollo de aplicaciones web en general.Apasionado con el trabajo que realizo, ofreciendo
+                            en cada proyectototal atención, dedicación, personalización y calidad
+                            <span>&#160;</span></p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="Card" id="Card" class="card wow fadeInDown" data-wow-duration="3s" data-wow-delay="1s">
+
+            <div class="container">
+                <H2 class="title title--border">Conocimientos técnicos y habilidades</H2>
+                <div class="card__container">
+                    <div class="card__item">
+                        <figure class="card__img">
+
+                            <img src="assets/bxl-c-plus-plus.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">C#</h3>
+                        <p class="">Web API</p>
+                        <p class="">.NET Framework</p>
+                        <p class="">.Web Forms</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+
+                            <img src="assets/bxl-html5.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">JS</h3>
+                        <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aspernatur provident commodi maxime? Nesciunt, labore nulla. Id praesentium optio odio amet ad est. Earum exercitationem ex libero quidem iusto sint?</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+
+                            <img src="assets/bxl-jquery.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">JQuery</h3>
+                        <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aspernatur provident commodi maxime? Nesciunt, labore nulla. Id praesentium optio odio amet ad est. Earum exercitationem ex libero quidem iusto sint?</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+
+                            <img src="assets/bxs-file-js.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">HTML</h3>
+                        <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aspernatur provident commodi maxime? Nesciunt, labore nulla. Id praesentium optio odio amet ad est. Earum exercitationem ex libero quidem iusto sint?</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+
+                            <img src="assets/bxs-file-js.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">HTML</h3>
+                        <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aspernatur provident commodi maxime? Nesciunt, labore nulla. Id praesentium optio odio amet ad est. Earum exercitationem ex libero quidem iusto sint?</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+
+                            <img src="assets/bxs-file-js.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">HTML</h3>
+                        <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aspernatur provident commodi maxime? Nesciunt, labore nulla. Id praesentium optio odio amet ad est. Earum exercitationem ex libero quidem iusto sint?</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <div>
+            <H2 class="title title--border">PROYECTOS</H2>
+            <section id="Curso" class="course container fadeInDown" data-wow-duration="3s" data-wow-delay="1s">
+                <figure class="course__picture">
+                    <img class="course__img">
+
+                </figure>
+
+                <div class="course__about wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                    <h2 class="title">iGeo Escolar</h2>
+                    <p class="about_paragraph">Desarrollo de modulos en la plataforma <a class="Referencias" href="https://www.igeoescolar.com.mx/">iGeo Escolar</a>, dicha plataforma ofrece herramientas que simplifican, facilitan y agilizan el control escolar y las tareas del día
+                        a día de los colegios para que se dediquen a lo que en verdad importa.</p>
+
+                </div>
+            </section>
+
+            <section id="Curso1" class="course course--modifier container wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                <figure class="course__picture course__picture--right">
+                    <img class="course__img">
+
+                </figure>
+
+                <div class="course__about course__about--left wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                    <h2 class="title">Plataforma Reto de Altura</h2>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque recusandae, odio cumque fuga nostrum laborum harum quidem, beatae expedita numquam culpa praesentium ullam perspiciatis ratione asperiores fugit voluptatibus enim. Illo?</p>
+                    <a href="#" class="cta">saber mas</a>
+                </div>
+            </section>
+
+            <section id="Curso2" class="course container wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                <figure class="course__picture">
+                    <img src="assets/reto.PNG" class="course__img">
+
+                </figure>
+
+                <div class="course__about wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                    <h2 class="title"> de shjdgsdsdñlsdkljds</h2>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque recusandae, odio cumque fuga nostrum laborum harum quidem, beatae expedita numquam culpa praesentium ullam perspiciatis ratione asperiores fugit voluptatibus enim. Illo?</p>
+                    <a href="#" class="cta">saber mas</a>
+                </div>
+            </section>
+
+            <section id="Curso3" class="course course--modifier container wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                <figure class="course__picture course__picture--right">
+                    <img src="assets/Escolar.PNG" class="course__img">
+
+                </figure>
+
+                <div class="course__about course__about--left wow fadeInDown" data-wow-duration="3s" data-wow-delay="2s">
+                    <h2 class="title"> de shjdgsdsdñlsdkljds</h2>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque recusandae, odio cumque fuga nostrum laborum harum quidem, beatae expedita numquam culpa praesentium ullam perspiciatis ratione asperiores fugit voluptatibus enim. Illo?</p>
+                    <a href="#" class="cta">saber mas</a>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <footer id="contato" class="footer wow fadeInDown" data-wow-duration="3s" data-wow-delay="0s">
+        <div class="footer__container container">
+            <div class="footer__contact">
+                <div class="footer_texts">
+                    <H2 class="title title--border" style="text-align: left;">Redes Sociales</H2>
+                    <p class="footer__copy">También puedes contactarme atreves de mi redes sociales:</p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/martim.martinez.11/" class="footer__link">
+                            <img src="assets/bxl-facebook.svg" class="footer__icon">
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=722799859" target="blank" class="footer__link">
+                            <img src="assets/bxl-whatsapp.svg" class="footer__icon">
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.wearedrew.co/3-pasos-para-integrar-whatsapp-con-tu-sitio-web" target="blank" class="footer__link">
+                            <img src="assets/bxl-telegram.svg" class="footer__icon">
+                        </a>
+                        <a href="#" class="footer__link" footer__link>
+                            <img src="assets/bxl-instagram.svg" class="footer__icon">
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.wearedrew.co/3-pasos-para-integrar-whatsapp-con-tu-sitio-web" target="blank" class="footer__link">
+                            <img src="assets/bxl-linkedin.svg" class="footer__icon">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="contact_Form" id="contacto">
+                    <H2 class="title">Contáctame</H2>
+                    <form action="">
+                        <p>
+                            <input type="text" placeholder="Nombre completo" id="Name" name="Nombre">
+                        </p>
+                        <p>
+                            <input type="email" id="=correo" placeholder="correo electroico" name="correo">
+                        </p>
+                        <p>
+                            <input type="tel" id="telefono" placeholder="Teléfono" name="telefono">
+                        </p>
+                        <p class="block">
+                            <textarea name="Mensaje" placeholder="Mensaje" id="Mensaje" cols="3"></textarea>
+                        </p>
+
+                        <p class="block">
+                            <button class="hero__cta" style="width: 100%;" type="button" value="Enviar">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+            <p class="footer__copyrignt">
+                Sitio web creado por &copy; martin martinez Dominguez:
+            </p>
+    </footer>
+
+    <script src="dist/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
