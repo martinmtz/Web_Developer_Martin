@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
  :root {
     --color-primary: #64FFDA;
     --color-title: #000;
@@ -10,6 +10,8 @@
     --text-btn: #fff;
     --padding-btn: 20px 35px;
     --height-shape: 18em;
+    --color-textoIportantes: #ccd6f6;
+    --font-family: 'Inconsolata', monospace;
 }
 
  ::-webkit-scrollbar {
@@ -163,23 +165,43 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .topnav a:not(:first-child) {
         display: none;
     }
     .topnav a.icon {
         float: right;
         display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-}
-
-@media screen and (max-width: 600px) {
     .topnav.responsive {
         /* position: fixed; */
         top: 0;
         bottom: 0;
         width: 100%;
-        height: 100%;
+        height: 150%;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topnav.responsive {
+        /* position: fixed; */
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 150%;
     }
     .topnav.responsive .icon {
         position: absolute;
@@ -207,6 +229,31 @@ h4 {
     top: 85px;
 }
 
+.box {
+    align-self: center;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-color: transparent;
+    transform-origin: bottom;
+}
+
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .hero {
     height: 100vh;
     min-height: 500px;
@@ -221,7 +268,7 @@ h4 {
 .hero__container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     place-items: center;
     grid-gap: 20px;
 }
@@ -232,9 +279,10 @@ h4 {
 }
 
 .hero__copy {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 25px 0;
-    color: #798EAE;
+    color: var( --color-textoIportantes);
+    text-align: justify;
 }
 
 .hero__cta {
@@ -259,6 +307,8 @@ h4 {
     border-color: #64FFDA;
     width: 150px;
     text-decoration: none;
+    float: right;
+    margin-top: 50px;
 }
 
 .hero__cta:hover {
@@ -301,18 +351,24 @@ h4 {
     margin-left: 1em;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
+    border: solid 1px rgba(0, 255, 255, .7);
+    padding: 5px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-color: white;
 }
 
 .Instructor__copy {
-    font-size: 1.0rem;
+    font-family: "Consolas", monospace;
     margin: 25px 0;
-    color: #cccccc;
+    color: #8992b0;
     text-align: justify;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    line-height: 2em
 }
 
 .Img_ins:hover {
@@ -333,22 +389,23 @@ h4 {
 .title {
     font-size: 2.5rem;
     text-align: var(--aling-title);
-    color: var(var(--color-title));
+    color: var( --color-textoIportantes);
     position: relative;
 }
 
 .Titulo__desarrollador {
     font-size: 2.5rem;
     text-align: var(--aling-title);
-    color: var(var(--color-title));
+    color: var( --color-textoIportantes);
     position: relative;
+    margin: 10px auto;
 }
 
 .title--border::after {
     content: "";
     display: block;
     width: 100px;
-    margin-top: 20px;
+    margin-top: 2px;
     height: 4px;
     background-color: rgb(100, 255, 218);
     animation-name: parpadeo;
@@ -491,6 +548,11 @@ h4 {
     text-align: center;
 }
 
+.Textos_C {
+    padding: 2px;
+    margin: 2px auto;
+}
+
 .about__img {
     width: 95%;
 }
@@ -525,7 +587,7 @@ h4 {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-gap: 20px;
     grid-template-areas: ".      card1      .    " "card2  card1      card3" "card2  card4      card3" "card5   card4     card6" "card5   .         card6 ";
 }
@@ -655,6 +717,17 @@ h4 {
 
 .Referencias {
     color: #64FFDA;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.Referencias:hover,
+.Referencias:focus {
+    background-size: 100% 1px;
 }
 
 .course__img {
@@ -857,7 +930,7 @@ input:focus {
         height: 50;
     }
     .hero__title {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
     }
     .instructor__container {
@@ -884,8 +957,8 @@ input:focus {
     }
     .card__container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: "card1          ." "card1      card2" "card3      card2" "card3      card4" ".          card4";
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: "card1          ." "card1      card2" "card3      card2" "card3      card4" "card5      card4" "card5      card6" ".          card6";
     }
     .course {
         grid-template-columns: repeat(6, 1fr);
@@ -934,17 +1007,25 @@ input:focus {
     .hero__container {
         margin-top: -90px;
         --padding-container: 45px 0;
+        font-size: 1em;
+    }
+    h4 {
+        color: #64FFDA;
+        position: absolute;
+        font-size: 1.2rem;
+        top: 300px;
     }
     .hero__texts {
         text-align: center;
+        top: 150px;
     }
     .hero__title {
         margin-top: -150px;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
     .instructor__container {
         display: grid;
-        width: 90%;
+        width: 95%;
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
@@ -973,8 +1054,12 @@ input:focus {
         margin-bottom: 20px;
     }
     .instructor__container {
-        width: 90%;
+        width: 95%;
         height: 100hv;
+    }
+    .Img_ins {
+        height: 300px;
+        align-items: center;
     }
     .about {
         grid-gap: 40;
@@ -985,8 +1070,8 @@ input:focus {
     .card__container {
         width: 97%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: "card1" "card2" "card3" "card4";
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6";
     }
     .footer {
         position: relative;
@@ -1016,4 +1101,30 @@ input:focus {
     .Correo {
         visibility: hidden;
     }
+}
+
+.modal_wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #444df741;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+
+.mensaje_modal {
+    background: #fff;
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
 }
